@@ -14,7 +14,7 @@ const codes = [
 function init() {
   // your code here
   document.body.addEventListener('keydown',function(event){
-    if(event.codes===["ArrowUp",
+    if(event.codes==="ArrowUp",
     "ArrowUp",
     "ArrowDown",
     "ArrowDown",
@@ -23,7 +23,7 @@ function init() {
     "ArrowLeft",
     "ArrowRight",
     "b",
-    "a"]){
+    "a"){
       alert("congratulatory message")
     }else{
       console.log()
