@@ -13,20 +13,16 @@ const codes = [
 
 function init() {
   // your code here
-  document.body.addEventListener('keydown',function(event){
-    if(event.codes==="ArrowUp",
-    "ArrowUp",
-    "ArrowDown",
-    "ArrowDown",
-    "ArrowLeft",
-    "ArrowRight",
-    "ArrowLeft",
-    "ArrowRight",
-    "b",
-    "a"){
-      alert("congratulatory message")
-    }else{
-      console.log()
+  let index=0
+  document.body.addEventListener('keydown',function(e){
+    const key= e.key;
+    if(key=== codes[index]
+    ){
+    index++;
+    if(index===codes.length){
+      alert("Congratulations!");
+      index=0
     }
+  }else{index=0;}
   })
 }
